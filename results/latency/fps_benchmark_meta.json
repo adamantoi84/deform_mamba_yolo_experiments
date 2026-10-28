@@ -1,0 +1,10 @@
+{
+  "gpu": "Tesla T4",
+  "compute_capability": "(7, 5)",
+  "torch": "2.11.0+cu128",
+  "imgsz": 640,
+  "batch": 1,
+  "precision": "FP32",
+  "warmup": 50,
+  "repeat": 300
+}

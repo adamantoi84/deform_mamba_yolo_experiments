@@ -1,0 +1,710 @@
+{
+ "dibuat": "2026-10-25T07:36:34+00:00",
+ "split": "val",
+ "seed": 2026,
+ "imgsz": 640,
+ "zoom_faktor": 3.0,
+ "zoom_min_in": 64,
+ "steel_root": "/kaggle/input/datasets/benyxu/dsf-yolo-steel-tube-dataset/steel-tube-dataset-all/yolo",
+ "swrd_root": "/kaggle/input/datasets/benyxu/swrd-dataset",
+ "steel_names": [
+  "air-hole",
+  "bite-edge",
+  "broken-arc",
+  "crack",
+  "hollow-bead",
+  "overlap",
+  "slag-inclusion",
+  "unfused"
+ ],
+ "swrd_names": {
+  "0": "porosity",
+  "1": "inclusion",
+  "2": "crack",
+  "3": "undercut",
+  "4": "lack of fusion",
+  "5": "lack of penetration"
+ },
+ "aturan": "kandidat = semua citra split ini yang memuat kelas tsb., diurutkan acak dgn seed; penulis memilih dari urutan itu",
+ "pilihan": [
+  {
+   "id": "SP-air-hole-003",
+   "dataset": "steel-pipe",
+   "kelas": "air-hole",
+   "class_id": 0,
+   "rank_acak": 3,
+   "pool": 406,
+   "file": "air-hole10-236.jpg",
+   "sha256": "253e82e425f00cf3a7e4b10b378b2226e7a1d3a32fd042deff894347305c9399",
+   "W": 1182,
+   "H": 817,
+   "kotak_zoom": {
+    "idx": 0,
+    "x1": 499.0,
+    "y1": 296.0,
+    "x2": 520.0,
+    "y2": 313.0,
+    "w_in": 11.371,
+    "h_in": 9.205,
+    "ar": 1.235,
+    "sisi": 10.23,
+    "tepi": false
+   },
+   "jendela_zoom_x0_y0_w_h": [
+    450.4,
+    245.4,
+    118.2,
+    118.2
+   ],
+   "semua_kotak": [
+    {
+     "kelas": "air-hole",
+     "x1": 678.0,
+     "y1": 463.0,
+     "x2": 696.0,
+     "y2": 479.0
+    },
+    {
+     "kelas": "air-hole",
+     "x1": 499.0,
+     "y1": 296.0,
+     "x2": 520.0,
+     "y2": 313.0
+    },
+    {
+     "kelas": "air-hole",
+     "x1": 241.0,
+     "y1": 40.0,
+     "x2": 261.0,
+     "y2": 56.0
+    }
+   ]
+  },
+  {
+   "id": "SP-bite-edge-001",
+   "dataset": "steel-pipe",
+   "kelas": "bite-edge",
+   "class_id": 1,
+   "rank_acak": 1,
+   "pool": 8,
+   "file": "bite-edge2-19.jpg",
+   "sha256": "7cb0f6d83ff22d5c59d58e29defe3bb39ffea5c5d24e41bec6a153aa60214454",
+   "W": 958,
+   "H": 653,
+   "kotak_zoom": {
+    "idx": 0,
+    "x1": 587.0,
+    "y1": 285.0,
+    "x2": 672.0,
+    "y2": 326.0,
+    "w_in": 56.785,
+    "h_in": 27.39,
+    "ar": 2.073,
+    "sisi": 39.438,
+    "tepi": false
+   },
+   "jendela_zoom_x0_y0_w_h": [
+    502.0,
+    178.0,
+    255.0,
+    255.0
+   ],
+   "semua_kotak": [
+    {
+     "kelas": "bite-edge",
+     "x1": 587.0,
+     "y1": 285.0,
+     "x2": 672.0,
+     "y2": 326.0
+    }
+   ]
+  },
+  {
+   "id": "SP-broken-arc-003",
+   "dataset": "steel-pipe",
+   "kelas": "broken-arc",
+   "class_id": 2,
+   "rank_acak": 3,
+   "pool": 74,
+   "file": "broken-arc1-61.jpg",
+   "sha256": "f9a12f623d58c4bb7e0254b322453b4e4cac4729e964df47fa2344f7c63d472b",
+   "W": 958,
+   "H": 653,
+   "kotak_zoom": {
+    "idx": 0,
+    "x1": 139.0,
+    "y1": 136.0,
+    "x2": 444.0,
+    "y2": 229.0,
+    "w_in": 203.758,
+    "h_in": 62.129,
+    "ar": 3.28,
+    "sisi": 112.514,
+    "tepi": false
+   },
+   "jendela_zoom_x0_y0_w_h": [
+    0.0,
+    0.0,
+    958.0,
+    653.0
+   ],
+   "semua_kotak": [
+    {
+     "kelas": "broken-arc",
+     "x1": 139.0,
+     "y1": 136.0,
+     "x2": 444.0,
+     "y2": 229.0
+    }
+   ]
+  },
+  {
+   "id": "SP-crack-001",
+   "dataset": "steel-pipe",
+   "kelas": "crack",
+   "class_id": 3,
+   "rank_acak": 1,
+   "pool": 23,
+   "file": "crack062.jpg",
+   "sha256": "7e16893503cd71422cb12dfb5461df4e3feba1e86dd6de2a0574eb664bd3eee8",
+   "W": 958,
+   "H": 653,
+   "kotak_zoom": {
+    "idx": 0,
+    "x1": 455.0,
+    "y1": 294.0,
+    "x2": 533.0,
+    "y2": 386.0,
+    "w_in": 52.109,
+    "h_in": 61.461,
+    "ar": 1.179,
+    "sisi": 56.592,
+    "tepi": false
+   },
+   "jendela_zoom_x0_y0_w_h": [
+    356.0,
+    202.0,
+    276.0,
+    276.0
+   ],
+   "semua_kotak": [
+    {
+     "kelas": "crack",
+     "x1": 455.0,
+     "y1": 294.0,
+     "x2": 533.0,
+     "y2": 386.0
+    }
+   ]
+  },
+  {
+   "id": "SP-hollow-bead-003",
+   "dataset": "steel-pipe",
+   "kelas": "hollow-bead",
+   "class_id": 4,
+   "rank_acak": 3,
+   "pool": 43,
+   "file": "air-hole4(hollow-bead)-096.jpg",
+   "sha256": "986d675f0fd68ce05b404a821bb198970f01efe7d4f035640050e3213fe8c522",
+   "W": 1182,
+   "H": 820,
+   "kotak_zoom": {
+    "idx": 0,
+    "x1": 589.0,
+    "y1": 739.0,
+    "x2": 650.0,
+    "y2": 784.0,
+    "w_in": 33.029,
+    "h_in": 24.365,
+    "ar": 1.356,
+    "sisi": 28.368,
+    "tepi": false
+   },
+   "jendela_zoom_x0_y0_w_h": [
+    528.0,
+    637.0,
+    183.0,
+    183.0
+   ],
+   "semua_kotak": [
+    {
+     "kelas": "air-hole",
+     "x1": 171.0,
+     "y1": 338.0,
+     "x2": 187.0,
+     "y2": 352.0
+    },
+    {
+     "kelas": "air-hole",
+     "x1": 229.0,
+     "y1": 392.0,
+     "x2": 244.0,
+     "y2": 405.0
+    },
+    {
+     "kelas": "air-hole",
+     "x1": 207.0,
+     "y1": 372.0,
+     "x2": 222.0,
+     "y2": 385.0
+    },
+    {
+     "kelas": "air-hole",
+     "x1": 307.0,
+     "y1": 463.0,
+     "x2": 322.0,
+     "y2": 477.0
+    },
+    {
+     "kelas": "air-hole",
+     "x1": 326.0,
+     "y1": 479.0,
+     "x2": 341.0,
+     "y2": 494.0
+    },
+    {
+     "kelas": "air-hole",
+     "x1": 392.0,
+     "y1": 543.0,
+     "x2": 406.0,
+     "y2": 555.0
+    },
+    {
+     "kelas": "hollow-bead",
+     "x1": 589.0,
+     "y1": 739.0,
+     "x2": 650.0,
+     "y2": 784.0
+    },
+    {
+     "kelas": "air-hole",
+     "x1": 659.0,
+     "y1": 798.0,
+     "x2": 678.0,
+     "y2": 816.0
+    }
+   ]
+  },
+  {
+   "id": "SP-overlap-003",
+   "dataset": "steel-pipe",
+   "kelas": "overlap",
+   "class_id": 5,
+   "rank_acak": 3,
+   "pool": 40,
+   "file": "overlap088.jpg",
+   "sha256": "1d81c9af547e3467039fd66cef1f7bfe644ccf4bcddb40fe1261060caec9903e",
+   "W": 958,
+   "H": 653,
+   "kotak_zoom": {
+    "idx": 0,
+    "x1": 368.0,
+    "y1": 336.0,
+    "x2": 435.0,
+    "y2": 385.0,
+    "w_in": 44.76,
+    "h_in": 32.735,
+    "ar": 1.367,
+    "sisi": 38.278,
+    "tepi": false
+   },
+   "jendela_zoom_x0_y0_w_h": [
+    301.0,
+    260.0,
+    201.0,
+    201.0
+   ],
+   "semua_kotak": [
+    {
+     "kelas": "overlap",
+     "x1": 368.0,
+     "y1": 336.0,
+     "x2": 435.0,
+     "y2": 385.0
+    }
+   ]
+  },
+  {
+   "id": "SP-slag-inclusion-003",
+   "dataset": "steel-pipe",
+   "kelas": "slag-inclusion",
+   "class_id": 6,
+   "rank_acak": 3,
+   "pool": 27,
+   "file": "air-hole9(slag-inclusion)-273.jpg",
+   "sha256": "60d063939506eab79d88adcba98387c476a3b4c5b051e6f8dcbde334d1b880d0",
+   "W": 1180,
+   "H": 813,
+   "kotak_zoom": {
+    "idx": 0,
+    "x1": 746.0,
+    "y1": 213.0,
+    "x2": 791.0,
+    "y2": 243.0,
+    "w_in": 24.407,
+    "h_in": 16.271,
+    "ar": 1.5,
+    "sisi": 19.928,
+    "tepi": false
+   },
+   "jendela_zoom_x0_y0_w_h": [
+    701.0,
+    160.5,
+    135.0,
+    135.0
+   ],
+   "semua_kotak": [
+    {
+     "kelas": "slag-inclusion",
+     "x1": 746.0,
+     "y1": 213.0,
+     "x2": 791.0,
+     "y2": 243.0
+    }
+   ]
+  },
+  {
+   "id": "SP-unfused-004",
+   "dataset": "steel-pipe",
+   "kelas": "unfused",
+   "class_id": 7,
+   "rank_acak": 4,
+   "pool": 95,
+   "file": "unfused4-20.jpg",
+   "sha256": "d4ea801b21cd220a581c7d8c173136ccffba3d5ab58d0e40b485baef0aa7c7c7",
+   "W": 1182,
+   "H": 817,
+   "kotak_zoom": {
+    "idx": 0,
+    "x1": 251.0,
+    "y1": 80.0,
+    "x2": 521.0,
+    "y2": 308.0,
+    "w_in": 146.193,
+    "h_in": 123.452,
+    "ar": 1.184,
+    "sisi": 134.342,
+    "tepi": false
+   },
+   "jendela_zoom_x0_y0_w_h": [
+    0.0,
+    0.0,
+    810.0,
+    810.0
+   ],
+   "semua_kotak": [
+    {
+     "kelas": "unfused",
+     "x1": 251.0,
+     "y1": 80.0,
+     "x2": 521.0,
+     "y2": 308.0
+    }
+   ]
+  },
+  {
+   "id": "SW-porosity-001",
+   "dataset": "SWRD",
+   "kelas": "porosity",
+   "class_id": 0,
+   "rank_acak": 1,
+   "pool": 209,
+   "file": "A_DJ-RT-20220726-7_x5793_y28.png",
+   "sha256": "61d997ab1bab4faccad519fe12ff30a9987c80edeb84e04ef366749a858b8853",
+   "W": 640,
+   "H": 640,
+   "kotak_zoom": {
+    "idx": 0,
+    "x1": 393.0,
+    "y1": 465.0,
+    "x2": 419.0,
+    "y2": 492.0,
+    "w_in": 26.0,
+    "h_in": 27.0,
+    "ar": 1.038,
+    "sisi": 26.495,
+    "tepi": false
+   },
+   "jendela_zoom_x0_y0_w_h": [
+    365.5,
+    438.0,
+    81.0,
+    81.0
+   ],
+   "semua_kotak": [
+    {
+     "kelas": "porosity",
+     "x1": 380.0,
+     "y1": 322.0,
+     "x2": 406.0,
+     "y2": 346.0
+    },
+    {
+     "kelas": "porosity",
+     "x1": 446.0,
+     "y1": 398.0,
+     "x2": 468.0,
+     "y2": 416.0
+    },
+    {
+     "kelas": "porosity",
+     "x1": 423.0,
+     "y1": 462.0,
+     "x2": 444.0,
+     "y2": 482.0
+    },
+    {
+     "kelas": "porosity",
+     "x1": 393.0,
+     "y1": 465.0,
+     "x2": 419.0,
+     "y2": 492.0
+    },
+    {
+     "kelas": "porosity",
+     "x1": 364.0,
+     "y1": 446.0,
+     "x2": 387.0,
+     "y2": 468.0
+    },
+    {
+     "kelas": "porosity",
+     "x1": 461.0,
+     "y1": 509.0,
+     "x2": 472.0,
+     "y2": 521.0
+    },
+    {
+     "kelas": "porosity",
+     "x1": 259.0,
+     "y1": 440.0,
+     "x2": 281.0,
+     "y2": 459.0
+    },
+    {
+     "kelas": "porosity",
+     "x1": 233.0,
+     "y1": 417.0,
+     "x2": 252.0,
+     "y2": 436.0
+    }
+   ]
+  },
+  {
+   "id": "SW-inclusion-006",
+   "dataset": "SWRD",
+   "kelas": "inclusion",
+   "class_id": 1,
+   "rank_acak": 6,
+   "pool": 54,
+   "file": "A_DJ-RT-20230214-65_x3843_y148.png",
+   "sha256": "7ed6609617684ada8e0cc934ea2f039c9331c90144d30d0cde75366a692eed5c",
+   "W": 640,
+   "H": 640,
+   "kotak_zoom": {
+    "idx": 0,
+    "x1": 171.0,
+    "y1": 496.0,
+    "x2": 638.0,
+    "y2": 599.0,
+    "w_in": 467.0,
+    "h_in": 103.0,
+    "ar": 4.534,
+    "sisi": 219.32,
+    "tepi": false
+   },
+   "jendela_zoom_x0_y0_w_h": [
+    0.0,
+    0.0,
+    640.0,
+    640.0
+   ],
+   "semua_kotak": [
+    {
+     "kelas": "inclusion",
+     "x1": 171.0,
+     "y1": 496.0,
+     "x2": 638.0,
+     "y2": 599.0
+    },
+    {
+     "kelas": "undercut",
+     "x1": 131.0,
+     "y1": 600.0,
+     "x2": 293.0,
+     "y2": 640.0
+    }
+   ]
+  },
+  {
+   "id": "SW-crack-002",
+   "dataset": "SWRD",
+   "kelas": "crack",
+   "class_id": 2,
+   "rank_acak": 2,
+   "pool": 75,
+   "file": "A_DJ-RT-20230306-28_x1358_y9.png",
+   "sha256": "fb324bb5339d0d854a0dd311976135f4779dae649059fedcdd5456c94290b255",
+   "W": 640,
+   "H": 640,
+   "kotak_zoom": {
+    "idx": 0,
+    "x1": -0.0,
+    "y1": 363.0,
+    "x2": 537.0,
+    "y2": 427.0,
+    "w_in": 537.0,
+    "h_in": 64.0,
+    "ar": 8.391,
+    "sisi": 185.386,
+    "tepi": true
+   },
+   "jendela_zoom_x0_y0_w_h": [
+    0.0,
+    0.0,
+    640.0,
+    640.0
+   ],
+   "semua_kotak": [
+    {
+     "kelas": "crack",
+     "x1": -0.0,
+     "y1": 363.0,
+     "x2": 537.0,
+     "y2": 427.0
+    },
+    {
+     "kelas": "porosity",
+     "x1": 425.0,
+     "y1": 362.0,
+     "x2": 476.0,
+     "y2": 410.0
+    },
+    {
+     "kelas": "porosity",
+     "x1": 358.0,
+     "y1": 284.0,
+     "x2": 455.0,
+     "y2": 364.0
+    }
+   ]
+  },
+  {
+   "id": "SW-undercut-001",
+   "dataset": "SWRD",
+   "kelas": "undercut",
+   "class_id": 3,
+   "rank_acak": 1,
+   "pool": 13,
+   "file": "A_DJ-RT-20230918-39_x2712_y11.png",
+   "sha256": "7e312c4fb107f4ff7314ce5200c9760a861b020f91ec20aa6a4aaff54c009fd0",
+   "W": 640,
+   "H": 640,
+   "kotak_zoom": {
+    "idx": 0,
+    "x1": 89.0,
+    "y1": 427.0,
+    "x2": 189.0,
+    "y2": 460.0,
+    "w_in": 100.0,
+    "h_in": 33.0,
+    "ar": 3.03,
+    "sisi": 57.445,
+    "tepi": false
+   },
+   "jendela_zoom_x0_y0_w_h": [
+    0.0,
+    293.5,
+    300.0,
+    300.0
+   ],
+   "semua_kotak": [
+    {
+     "kelas": "undercut",
+     "x1": 89.0,
+     "y1": 427.0,
+     "x2": 189.0,
+     "y2": 460.0
+    }
+   ]
+  },
+  {
+   "id": "SW-lack_of_fusion-004",
+   "dataset": "SWRD",
+   "kelas": "lack of fusion",
+   "class_id": 4,
+   "rank_acak": 4,
+   "pool": 37,
+   "file": "A_DJ-RT-20240106-23_x523_y222.png",
+   "sha256": "c8bf8ab1583dcef09d7283ce91a93608db927b575e93623d1b798ddf1c217018",
+   "W": 640,
+   "H": 640,
+   "kotak_zoom": {
+    "idx": 0,
+    "x1": 0.0,
+    "y1": 121.769,
+    "x2": 640.0,
+    "y2": 209.0,
+    "w_in": 640.0,
+    "h_in": 87.231,
+    "ar": 7.337,
+    "sisi": 236.279,
+    "tepi": true
+   },
+   "jendela_zoom_x0_y0_w_h": [
+    0.0,
+    0.0,
+    640.0,
+    640.0
+   ],
+   "semua_kotak": [
+    {
+     "kelas": "lack of fusion",
+     "x1": 0.0,
+     "y1": 121.77,
+     "x2": 640.0,
+     "y2": 209.0
+    }
+   ]
+  },
+  {
+   "id": "SW-lack_of_penetration-001",
+   "dataset": "SWRD",
+   "kelas": "lack of penetration",
+   "class_id": 5,
+   "rank_acak": 1,
+   "pool": 40,
+   "file": "A_DJ-RT-20240106-43_x692_y0.png",
+   "sha256": "d8d3e6e8e0d3ccfaa22394da21e5bbb5c5c162ec064b18372e2ce74d97c90626",
+   "W": 640,
+   "H": 518,
+   "kotak_zoom": {
+    "idx": 0,
+    "x1": 0.0,
+    "y1": 254.0,
+    "x2": 640.0,
+    "y2": 349.739,
+    "w_in": 640.0,
+    "h_in": 95.739,
+    "ar": 6.685,
+    "sisi": 247.534,
+    "tepi": true
+   },
+   "jendela_zoom_x0_y0_w_h": [
+    0.0,
+    0.0,
+    640.0,
+    518.0
+   ],
+   "semua_kotak": [
+    {
+     "kelas": "lack of penetration",
+     "x1": 0.0,
+     "y1": 254.0,
+     "x2": 640.0,
+     "y2": 349.74
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+  "imgsz": 640,
+  "n_val": 682,
+  "modes": [
+    "fp32",
+    "amp",
+    "half"
+  ],
+  "ckpt": {
+    "1": {
+      "path": "/content/drive/MyDrive/demamba-yolowd/output/p1-fix_seed1_150ep_lr0.002/weights/best.pt",
+      "sha256": "8ce91037ed1889bef334c2bbf3ffcee67aee51db026756df6c9a35373ca0db59",
+      "name": "p1-fix_seed1_150ep_lr0.002",
+      "seed": 1,
+      "optimizer": "SGD",
+      "lr0": 0.002,
+      "epochs": 150
+    },
+    "3": {
+      "path": "/content/drive/MyDrive/demamba-yolowd/output/p1-fix_seed3_150ep_lr0.002/weights/best.pt",
+      "sha256": "8cc05ed6812b9d12dd3b81fedcac393348634b39e3af59941fafe0dad90ee0f4",
+      "name": "p1-fix_seed3_150ep_lr0.002",
+      "seed": 3,
+      "optimizer": "SGD",
+      "lr0": 0.002,
+      "epochs": 150
+    }
+  },
+  "deform_sha256": "675445871a2e4d55400175ef5f6fda83c90ece651bf818e3f54481bc14a6d9aa",
+  "env": {
+    "repo_commit": "51f7be9bd5ab907b6f7d2c91bb71ca5a4be063aa",
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "nvcc": "13.0",
+    "python": "3.13.16",
+    "gpu": "NVIDIA A100-SXM4-40GB",
+    "ss_tag": "sm80_torch2.11.0-cu128_cuda12.8_py313"
+  },
+  "preprocess": "LetterBox(640x640, auto=False, scaleup=False), BGR->RGB, /255",
+  "recompute_match_all": true
+}

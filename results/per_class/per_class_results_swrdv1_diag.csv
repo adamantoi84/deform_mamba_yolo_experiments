@@ -1,0 +1,8 @@
+dataset,model,seed,class,mAP50_95,mAP50,precision,recall,status_kelas,deform_sha16,ckpt_path
+swrdv1_diag_lr0.01,B2,1,ALL,0.08278476745229156,0.21555251170810816,0.24843864388364623,0.3088464178524453,agregat,675445871a2e4d55,/content/drive/MyDrive/demamba-yolowd/output/swrdv1_diag_b2_seed1_150ep_lr0.01/weights/best.pt
+swrdv1_diag_lr0.01,B2,1,porosity,0.2648042212641889,0.5723211871578004,0.5458361147475905,0.5999539293322784,utama,675445871a2e4d55,/content/drive/MyDrive/demamba-yolowd/output/swrdv1_diag_b2_seed1_150ep_lr0.01/weights/best.pt
+swrdv1_diag_lr0.01,B2,1,inclusion,0.0191075181130046,0.049661681843213804,0.10442906593599717,0.10917068070721693,utama,675445871a2e4d55,/content/drive/MyDrive/demamba-yolowd/output/swrdv1_diag_b2_seed1_150ep_lr0.01/weights/best.pt
+swrdv1_diag_lr0.01,B2,1,crack,0.11613865502495724,0.3500138392707624,0.3766161161333664,0.4117647058823529,utama,675445871a2e4d55,/content/drive/MyDrive/demamba-yolowd/output/swrdv1_diag_b2_seed1_150ep_lr0.01/weights/best.pt
+swrdv1_diag_lr0.01,B2,1,undercut,0.03793510509705743,0.0937742258108631,0.12183899920876556,0.21428571428571427,deskriptif,675445871a2e4d55,/content/drive/MyDrive/demamba-yolowd/output/swrdv1_diag_b2_seed1_150ep_lr0.01/weights/best.pt
+swrdv1_diag_lr0.01,B2,1,lack_of_fusion,0.021366527778859563,0.06682559387360092,0.1420410309910077,0.1276595744680851,deskriptif,675445871a2e4d55,/content/drive/MyDrive/demamba-yolowd/output/swrdv1_diag_b2_seed1_150ep_lr0.01/weights/best.pt
+swrdv1_diag_lr0.01,B2,1,lack_of_penetration,0.037356577435681645,0.16071854229240817,0.19987053628515014,0.3902439024390244,deskriptif,675445871a2e4d55,/content/drive/MyDrive/demamba-yolowd/output/swrdv1_diag_b2_seed1_150ep_lr0.01/weights/best.pt

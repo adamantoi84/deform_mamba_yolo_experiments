@@ -1,0 +1,6 @@
+dataset,model,seed,run_name,status,rasio_cls_e140_min,epoch_rasio,nonfinite_epochs,best_epoch,deform_sha16
+steelpipe_gf,P1-NoProj,1,gf_p1-noproj_seed1_150ep_lr0.002,sehat,1.001138486169172,140,0,147,675445871a2e4d55
+steelpipe_gf,P1-NoProj,2,gf_p1-noproj_seed2_150ep_lr0.002,KOLAPS,3.0927744209466264,140,0,26,675445871a2e4d55
+steelpipe_gf,P1-NoProj,3,gf_p1-noproj_seed3_150ep_lr0.002,sehat,1.0132992327365729,140,0,150,675445871a2e4d55
+steelpipe_gf,P1-NoProj,4,gf_p1-noproj_seed4_150ep_lr0.002,KOLAPS,3.196696790277345,140,0,15,675445871a2e4d55
+steelpipe_gf,P1-NoProj,5,gf_p1-noproj_seed5_150ep_lr0.002,KOLAPS,5.3383690890711,140,0,20,675445871a2e4d55

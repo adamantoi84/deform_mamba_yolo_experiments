@@ -1,0 +1,8 @@
+# Analysis and figure scripts (tested with Python 3.13, numpy 2.5.3, pandas 3.0.5, scipy 1.18.1, matplotlib 3.11.2, Pillow 12.3.0)
+numpy>=1.26
+pandas>=2.0
+scipy>=1.11
+matplotlib>=3.8
+Pillow>=10.0
+# count_parameters.py and count_detector_parameters.py additionally need torch, einops, timm, and
+# (for the detectors) ultralytics==8.2.29
