@@ -1,0 +1,57 @@
+bentuk label resmi (shape_type): {'polygon': 44597}; jumlah titik per bentuk: {8: 7685, 9: 7545, 7: 5550, 10: 5378, 6: 3482, 11: 3342}
+label resmi dengan koordinat di luar crop (tidak dipotong): 0
+
+kategori label (IoU-matching, tol 1.5 px):
+   cocok (dengan potong tepi): 43142
+   INTERIOR, deviasi >1.5 px: 1071   per kelas: {'伪缺陷': 649, '裂纹': 181, '气孔': 131, '未焊透': 44, '未熔合': 41}
+   resmi tanpa pasangan IoU>0.05 (INTERIOR): 212
+   kita tanpa pasangan resmi, fraksi dalam crop <0.5: 170
+   TEPI crop, deviasi >1.5 px: 138   per kelas: {'伪缺陷': 65, '裂纹': 46, '气孔': 15, '夹渣': 7, '未熔合': 3}
+   kita tanpa pasangan resmi, fraksi dalam crop >=0.5: 72
+   resmi tanpa pasangan IoU>0.05 (TEPI): 34
+
+label resmi yang berpasangan tetapi deviasi >1.5 px: IoU {'0.7-0.9': 225, '0.5-0.7': 228, '<0.5': 665, 'IoU>=0.9': 91}; perubahan ukuran median (dW,dH) = [-19. -34.]
+deviasi (resmi - kita) (dx0,dy0,dx1,dy1) terbanyak: {(0, 0, -5, 0): 5, (0, 0, -9, 0): 5, (6, 0, 0, 0): 5, (0, 0, -6, 0): 5, (0, 0, -7, 0): 5, (0, 0, -10, 0): 4, (0, 0, -3, 0): 4, (3, 0, 0, 0): 4, (9, 0, 0, 0): 4, (0, 45, 0, 0): 4}
+crop dengan >=80% label tak cocok (dan >=3 label): 0 -> []
+crop resmi yang poligon 焊缝-nya bukan pas selebar crop: 2411 -> [('B_DJ-RT-20220621-18', 'T/1', 286, 1650, [5, 483, 11, 936], (35, 36)), ('A_DJ-RT-20220708-23', 'T/1', 7614, 654, [3446, 563, 4077, 577], (132, 672)), ('B_DJ-RT-20220708-23', 'T/1', 632, 1234, [43, 764, 275, 1233], (3578, 16)), ('A_DJ-RT-20220708-24', 'T/1', 7604, 527, [2102, 11, 2125, 475], (141, 509)), ('B_DJ-RT-20220708-24', 'T/1', 419, 1240, [118, 12, 118, 12], (2201, 503)), ('A_DJ-RT-20220708-32', 'T/1', 7853, 425, [2283, 133, 2629, 400], (33, 576)), ('B_DJ-RT-20220708-32', 'T/1', 350, 951, [240, 691, 325, 946], (2316, 26)), ('A_DJ-RT-20220708-37', 'T/1', 7875, 708, [3140, 12, 3550, 708], (28, 542)), ('B_DJ-RT-20220708-37', 'T/1', 475, 1217, [428, 1198, 428, 1198], (3130, 34)), ('A_DJ-RT-20220708-48', 'T/1', 7841, 436, [2341, 33, 2593, 416], (37, 526))]
+
+cek piksel pada crop bermasalah (asal kita, geser +-3, korelasi patch tengah 400x400):
+crop tanpa label bagian-dalam (tak teruji lewat label): 260; 30 disampel untuk cek piksel
+   B_DJ-RT-20220621-18 (T/1): asal kita=(35,36) pearson=1.000 geser terbaik=(0,0) identik@asal=1.0000
+   A_DJ-RT-20220708-23 (T/1): asal kita=(132,672) pearson=1.000 geser terbaik=(0,0) identik@asal=1.0000
+   B_DJ-RT-20220708-23 (T/1): asal kita=(3578,16) pearson=1.000 geser terbaik=(0,0) identik@asal=1.0000
+   A_DJ-RT-20220708-24 (T/1): asal kita=(141,509) pearson=1.000 geser terbaik=(0,0) identik@asal=1.0000
+   B_DJ-RT-20220708-24 (T/1): asal kita=(2201,503) pearson=1.000 geser terbaik=(0,0) identik@asal=1.0000
+   A_DJ-RT-20220708-32 (T/1): asal kita=(33,576) pearson=1.000 geser terbaik=(0,0) identik@asal=1.0000
+   B_DJ-RT-20220708-32 (T/1): asal kita=(2316,26) pearson=1.000 geser terbaik=(0,0) identik@asal=1.0000
+   A_DJ-RT-20220708-37 (T/1): asal kita=(28,542) pearson=1.000 geser terbaik=(0,0) identik@asal=1.0000
+   B_DJ-RT-20221209-188 (T/1): asal kita=(3709,2) pearson=1.000 geser terbaik=(0,0) identik@asal=1.0000
+   B_DJ-RT-20230403-13 (T/1): asal kita=(3855,7) pearson=1.000 geser terbaik=(0,0) identik@asal=1.0000
+   B_DJ-RT-20230106-69 (T/1): asal kita=(3227,2) pearson=1.000 geser terbaik=(0,0) identik@asal=1.0000
+   B_DJ-RT-20230315-11 (T/1): asal kita=(3338,5) pearson=1.000 geser terbaik=(0,0) identik@asal=1.0000
+   B_DJ-RT-T-20231007-13 (T/1): asal kita=(1041,3) pearson=1.000 geser terbaik=(0,0) identik@asal=1.0000
+   B_DJ-RT-20230707-49 (T/1): asal kita=(6896,6) pearson=1.000 geser terbaik=(0,0) identik@asal=1.0000
+   B_DJ-RT-20230227-7 (T/1): asal kita=(3598,3) pearson=1.000 geser terbaik=(0,0) identik@asal=1.0000
+   B_DJ-RT-20230222-9 (T/1): asal kita=(3977,717) pearson=1.000 geser terbaik=(0,0) identik@asal=1.0000
+   B_DJ-RT-20221216-55 (T/1): asal kita=(7874,3) pearson=1.000 geser terbaik=(0,0) identik@asal=1.0000
+   B_DJ-RT-20221216-52 (T/1): asal kita=(4153,4) pearson=1.000 geser terbaik=(0,0) identik@asal=1.0000
+   B_DJ-RT-T-20230803-55 (T/1): asal kita=(3116,2) pearson=1.000 geser terbaik=(0,0) identik@asal=1.0000
+   A_DJ-RT-T-20230801-11 (T/1): asal kita=(64,609) pearson=1.000 geser terbaik=(0,0) identik@asal=1.0000
+   B_DJ-RT-T-20230804-8 (T/1): asal kita=(1078,3) pearson=1.000 geser terbaik=(0,0) identik@asal=1.0000
+   B_DJ-RT-20230112-23 (T/1): asal kita=(3219,1) pearson=1.000 geser terbaik=(0,0) identik@asal=1.0000
+   B_DJ-RT-20230306-41 (T/1): asal kita=(1071,3) pearson=1.000 geser terbaik=(0,0) identik@asal=1.0000
+   B_DJ-RT-20230721-174 (T/1): asal kita=(3843,6) pearson=1.000 geser terbaik=(0,0) identik@asal=1.0000
+   B_DJ-RT-T-20231009-13 (T/1): asal kita=(3270,3) pearson=1.000 geser terbaik=(0,0) identik@asal=1.0000
+   B_DJ-RT-20221226-239 (T/1): asal kita=(3018,1) pearson=1.000 geser terbaik=(0,0) identik@asal=1.0000
+   B_DJ-RT-T-20230804-9 (T/1): asal kita=(1145,3) pearson=1.000 geser terbaik=(0,0) identik@asal=1.0000
+   B_DJ-RT-20221215-43 (T/1): asal kita=(197,10) pearson=1.000 geser terbaik=(0,0) identik@asal=1.0000
+   B_DJ-RT-T-20231008-24 (T/1): asal kita=(3109,3) pearson=1.000 geser terbaik=(0,0) identik@asal=1.0000
+   A_DJ-RT-T-20231007-21 (T/1): asal kita=(69,633) pearson=1.000 geser terbaik=(0,0) identik@asal=1.0000
+   B_DJ-RT-20221216-69 (T/1): asal kita=(7814,2) pearson=1.000 geser terbaik=(0,0) identik@asal=1.0000
+   B_DJ-RT-20230410-44 (T/1): asal kita=(3203,3) pearson=1.000 geser terbaik=(0,0) identik@asal=1.0000
+   B_DJ-RT-20220708-23 (T/1): asal kita=(3578,16) pearson=1.000 geser terbaik=(0,0) identik@asal=1.0000
+   B_DJ-RT-20221226-86 (T/1): asal kita=(1064,3) pearson=1.000 geser terbaik=(0,0) identik@asal=1.0000
+   B_DJ-RT-T-20230803-11 (T/1): asal kita=(1305,2) pearson=1.000 geser terbaik=(0,0) identik@asal=1.0000
+   B_DJ-RT-20221226-71 (T/1): asal kita=(1104,3) pearson=1.000 geser terbaik=(0,0) identik@asal=1.0000
+   B_DJ-RT-20221226-169 (T/1): asal kita=(3208,4) pearson=1.000 geser terbaik=(0,0) identik@asal=1.0000
+   B_DJ-RT-20221215-48 (T/1): asal kita=(442,4) pearson=1.000 geser terbaik=(0,0) identik@asal=1.0000

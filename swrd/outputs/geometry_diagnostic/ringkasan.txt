@@ -1,0 +1,23 @@
+Diagnostik geometri -- swrd_tiles  (imgsz 640, reg_max 16, jangkauan/sisi P3 120px, P4 240px, P5 480px)
+split kelas                    n  panjang p50/p90  pendek p10/p50 aspek p50 %asp>=100 %pjg>240 %pjg>480 p_buang IoU_maks rec@.5 rec@.75 tnp_anc
+train porosity              2204      37/88         18.0/29.0           1.2       0.0      0.9      0.1   0.000    0.999  0.999   0.999   0.001
+train inclusion              254      78/194        20.3/40.0           2.0       0.0      4.7      0.4   0.000    1.000  1.000   1.000   0.000
+train crack                  244     304/640        25.0/44.0           6.8       0.0     61.5     29.1   0.000    1.000  1.000   0.998   0.000
+train undercut               124     187/415        24.9/43.4           4.8       0.0     33.1      6.5   0.000    1.000  1.000   1.000   0.000
+train lack_of_fusion         130     340/640        24.5/42.2           7.9       0.0     64.6     35.4   0.000    1.000  1.000   0.999   0.000
+train lack_of_penetration    198     640/640        20.9/38.0          14.2       0.0     90.4     73.7   0.006    0.985  0.990   0.976   0.009
+train SEMUA                 3154      49/402        19.0/32.0           1.3       0.0     15.4      8.7   0.000    0.999  0.999   0.998   0.001
+val   porosity               619      34/75         16.0/28.0           1.2       0.0      0.5      0.0   0.000    0.997  0.997   0.997   0.003
+val   inclusion               78      72/253        19.7/36.5           1.6       0.0     11.5      0.0   0.000    1.000  1.000   1.000   0.000
+val   crack                   85     238/613        25.4/45.0           5.6       0.0     49.4     18.8   0.000    0.996  0.996   0.996   0.004
+val   undercut                14     159/260        30.9/40.0           3.6       0.0     21.4      0.0   0.000    1.000  1.000   1.000   0.000
+val   lack_of_fusion          47     268/602        22.0/41.0           7.1       0.0     53.2     19.1   0.000    0.997  0.997   0.997   0.003
+val   lack_of_penetration     41     601/640        24.3/46.4          10.0       0.0     95.1     73.2   0.000    0.987  0.991   0.983   0.009
+val   SEMUA                  884      43/306        17.0/31.0           1.3       0.0     13.7      6.2   0.000    0.997  0.997   0.997   0.003
+
+Kolom: panjang/pendek = sisi kotak (px, setelah resize ke imgsz); %asp>=100 = kotak yang SELALU dibuang
+augmentasi train (box_candidates); p_buang = peluang rata-rata kotak dibuang dari target train per
+penyajian (tanpa mosaic); IoU_maks = plafon IoU rata-rata yang bisa dicapai prediksi anchor positif;
+rec@.5 / rec@.75 = bagian kotak yang secara geometris BISA ditangkap pada IoU 0.5 / 0.75
+(batas atas recall -> batas atas kasar AP50 / AP75); tnp_anc = peluang tidak ada satu pun pusat anchor
+di dalam kotak (kotak tidak pernah mendapat sinyal positif pada posisi grid itu).

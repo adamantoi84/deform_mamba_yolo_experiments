@@ -1,0 +1,37 @@
+film terpakai (split_v1): 3358; film dengan crop resmi: 3356; crop resmi: 4610
+film tanpa crop resmi: ['DJ-RT-20221227-111', 'DJ-RT-20230720-64']
+
+=== BAGIAN 1: JSON, semua film terpakai (25s) ===
+crop resmi berpasangan dengan crop kita (ukuran +-3): 4610; crop resmi tanpa pasangan: 0 []; crop kita (焊缝) tanpa pasangan resmi: 2 ['DJ-RT-20230220-104#0', 'DJ-RT-20230220-53#0']
+selisih ukuran (resmi - kita) (dW,dH): {(1, 1): 4607, (1, 0): 2, (0, 1): 1}
+poligon 焊缝 dalam crop-JSON resmi: (x0,y0, x1-W, y1-H) terbanyak: {(0, 0, -1, -1): 4607, (5, 483, -275, -714): 1, (3446, 563, -3537, -77): 1, (43, 764, -357, -1): 1, (2102, 11, -5479, -52): 1, (118, 12, -301, -1228): 1}
+titik asal sebenarnya (estimasi dari label) - round(pojok 焊缝): tepat 0 pada 4261/4263 crop (99.95%); sebaran: {(0.0, 0.0): 4261, (0.0, -4.0): 1, (0.0, 1.0): 1}
+titik asal sebenarnya (estimasi dari label) - floor(pojok 焊缝): tepat 0 pada 4261/4263 crop (99.95%); sebaran: {(0.0, 0.0): 4261, (0.0, -4.0): 1, (0.0, 1.0): 1}
+titik asal sebenarnya (estimasi dari label) - ceil(pojok 焊缝): tepat 0 pada 4261/4263 crop (99.95%); sebaran: {(0.0, 0.0): 4261, (0.0, -4.0): 1, (0.0, 1.0): 1}
+crop tanpa label bagian-dalam untuk estimasi asal (tidak teruji lewat label): 347
+selisih skala/peregangan (|dx0 - dx1|) median 0.0, maks 8.0
+
+label per kelas (resmi total / cocok / hanya-resmi | kita yang beririsan dengan crop / hanya-kita):
+   气孔: 25725 / 25553 / 172 | 25725 / 172
+   伪缺陷: 13124 / 12277 / 847 | 13122 / 845
+   夹渣: 2015 / 1985 / 30 | 2015 / 30
+   裂纹: 1892 / 1642 / 250 | 1892 / 250
+   未熔合: 810 / 756 / 54 | 810 / 54
+   未焊透: 763 / 673 / 90 | 763 / 90
+   咬边: 224 / 214 / 10 | 223 / 9
+   夹钨: 27 / 27 / 0 | 27 / 0
+   内凹: 10 / 10 / 0 | 10 / 0
+   焊瘤: 6 / 6 / 0 | 6 / 0
+   None: 1 / 0 / 1 | 0 / 0
+objek 'hanya-kita' menurut fraksi luas yang berada dalam crop: {'0.50-0.90': 626, '>=0.90': 263, '<0.10': 58, '0.10-0.50': 503}; menurut letak pusat: {'pusat di dalam crop': 894, 'pusat di luar crop': 556}
+TOTAL label resmi: 44597; cocok dengan label kita (tol 1.5 px): 43143 (96.740%)
+crop dengan ketidakcocokan terbanyak: A_DJ-RT-20221226-120 resmi-saja 11 kita-saja 11; A_DJ-RT-20221228-27 resmi-saja 11 kita-saja 11; A_DJ-RT-20230222-10 resmi-saja 11 kita-saja 11; A_DJ-RT-20230222-24 resmi-saja 10 kita-saja 10; A_DJ-RT-20221226-128 resmi-saja 9 kita-saja 9; A_DJ-RT-20230220-28 resmi-saja 9 kita-saja 9; A_DJ-RT-20221226-85 resmi-saja 7 kita-saja 7; B_DJ-RT-20230109-40 resmi-saja 7 kita-saja 7; A_DJ-RT-20230731-30 resmi-saja 7 kita-saja 7; A_DJ-RT-20221226-238 resmi-saja 6 kita-saja 6
+
+=== BAGIAN 2: piksel (sampel berstrata) ===
+crop disampel: 37 (tersedia per folder: {'L/1': 2048, 'T/1': 2318, 'L/2': 54})
+ukuran array crop = ukuran JSON: 37/37
+piksel IDENTIK 100% pada titik asal kita (shift 0,0): 37/37
+piksel identik >=99.99%: 37/37; pergeseran terbaik (dx,dy): {(0, 0): 37}
+korelasi Pearson patch tengah (min / median): 1.0 / 1.0
+
+KRITERIA LULUS (ditetapkan sebelum melihat hasil): (1) semua crop resmi berpasangan; (2) titik asal estimasi-label = round(pojok 焊缝) pada >=99.5% crop dan tidak ada yang selisih >1 px; (3) >=99.5% label resmi cocok (tol 1.5 px); (4) semua crop sampel identik piksel pada titik asal kita. Bila ada yang gagal, builder JANGAN dijalankan.

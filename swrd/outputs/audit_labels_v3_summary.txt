@@ -1,0 +1,14 @@
+tile diperiksa: 3400; kotak: 3969
+A label != JSON crop resmi (aturan mana pun): 0 tile
+aturan label yang cocok per tile: kotak(v3) 514, poligon(v4) 0, keduanya-sama 2886, tidak-cocok 0
+E kotak berlabel yang TIDAK berisi poligon cacat asli kelas sama: 1 kotak
+F kotak yang cacat aslinya mengisi <50% kotak: 89 kotak; longgar (IoU 0,5-0,9, dicatat saja): 249
+tile ambigu terpilih (aturan poligon): 0
+G tile negatif menyentuh cacat asli: 0 tile
+H cacat asli tampak (>=10%) di tile positif tanpa label: 0 kotak
+B kotak tak ada di JSON mentah (anotasi asli): 0 kotak
+C PNG != render ulang: 0 tile
+skor kontras kotak (kuantil 5/25/50/75/95): [0.04, 0.19, 0.43, 0.83, 1.69]; kotak skor <0,5: 2212
+skor kontras rendah per kelas (<0,5): {'porosity': 1662, 'inclusion': 230, 'crack': 157, 'lack_of_fusion': 93, 'undercut': 24, 'lack_of_penetration': 46}
+lembar visual: 350 tile positif (val), tile GAGAL lebih dulu, lalu dari kontras terendah
+HASIL: ADA 90 KEGAGALAN - lihat gagal.csv

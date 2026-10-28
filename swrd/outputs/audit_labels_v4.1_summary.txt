@@ -1,0 +1,14 @@
+tile diperiksa: 3400; kotak: 4038
+A label != JSON crop resmi (aturan mana pun): 0 tile
+aturan label yang cocok per tile: kotak(v3) 0, poligon(v4) 522, keduanya-sama 2878, tidak-cocok 0
+E kotak berlabel yang TIDAK berisi poligon cacat asli kelas sama: 0 kotak
+F kotak yang cacat aslinya mengisi <50% kotak: 0 kotak; longgar (IoU 0,5-0,9, dicatat saja): 0
+tile ambigu terpilih (aturan poligon): 0
+G tile negatif menyentuh cacat asli: 0 tile
+H cacat asli tampak (>=10%) di tile positif tanpa label: 0 kotak
+B kotak tak ada di JSON mentah (anotasi asli): 0 kotak
+C PNG != render ulang: 0 tile
+skor kontras kotak (kuantil 5/25/50/75/95): [0.04, 0.2, 0.44, 0.84, 1.68]; kotak skor <0,5: 2204
+skor kontras rendah per kelas (<0,5): {'porosity': 1688, 'inclusion': 216, 'crack': 132, 'lack_of_fusion': 95, 'undercut': 25, 'lack_of_penetration': 48}
+lembar visual: 350 tile positif (val), tile GAGAL lebih dulu, lalu dari kontras terendah
+HASIL: LULUS - setiap label identik dengan anotasi resmi dan berasal dari anotasi asli
